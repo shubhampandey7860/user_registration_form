@@ -21,8 +21,13 @@
         
         {% if user.is_authenticated %}
             <a href="{% url 'Logout' %}"class="nav-link">Logout</a>
+            <a href="{%url 'change_password' %}"class='nav-link'>change password</a>
+
+            <a href="{%url 'profile_display' %}"class='nav-link'>profile_display</a>
+            
         {% else %} 
             <a href="{% url 'Login' %}"class='nav-link'>Login</a>
+           
         
         {% endif %}    
 
